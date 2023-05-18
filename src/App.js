@@ -1,12 +1,12 @@
 import logo from './logo.svg';
-import { Navbar } from './components/Navbar';
-
 import './App.css';
+import {Calculadora,Calculadora2} from "./components"
 function App() {
   return (
-    <div>
-      <Navbar />
-    </div>
+  <div>
+    <Calculadora/>
+    <Calculadora2/>
+  </div>
 
   );
 }
