@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import {Calculadora,Calculadora2} from "./components"
+import { CardProductos } from './Components/CardProductos';
 function App() {
   return (
-  <div>
-    <Calculadora/>
-    <Calculadora2/>
-  </div>
+    <div className="m-3">
+
+      <CardProductos />
+    </div>
 
   );
 }
