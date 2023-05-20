@@ -1,24 +1,25 @@
-import { Modal } from "./Modal"
+import { ModalNav } from "./Modal"
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
+export const NavPrincipal = () => {
 
-export const Navbar = () => {
+  return (
+    <Navbar bg="light">
+      <Container className="d-flex justify-content-center">
+        <Navbar.Brand href="#home">
+          <img
+            src="https://assets.stickpng.com/images/58e383a9204d556bbd97b149.png"
+            width="50"
+            height="50"
+            className="d-inline-block align-top"
+            alt="Apple Logo"
+          />
+        </Navbar.Brand>
+        <ModalNav />
+      </Container>
+    </Navbar>
+  );
 
-    return (
-
-        <nav class="navbar bg-body-tertiary">
-            <div class=" container-fluid d-flex justify-content-between ">
-
-                <a class="navbar-brand" href="#">
-                    <img src="https://assets.stickpng.com/images/58e383a9204d556bbd97b149.png" alt="logo" width="50px" height="60px" />  </a>
-                <div>
-                    <Modal />
-                </div>
-            </div>
-
-
-
-        </nav>
-
-    )
 
 }

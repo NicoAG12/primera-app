@@ -1,0 +1,17 @@
+{
+  "count": 50,
+  "phones": [
+    {
+      "name": "iPhone XR",
+      "price": "USD 400",
+      "img": "https://d28hi93gr697ol.cloudfront.net/9ef84dda-32dd-4016-7da3-1c0a824fffb4/img/Producto/946/54c199d2042125a4ebde4f6db2b147c7-6317e9fe739d8.jpg",
+      "description": "Este celular es muy bueno"
+    },
+    {
+      "name": "iPhone XS",
+      "price": "USD 2500",
+      "img": "https://d28hi93gr697ol.cloudfront.net/9ef84dda-32dd-4016-7da3-1c0a824fffb4/img/Producto/946/54c199d2042125a4ebde4f6db2b147c7-6317e9fe739d8.jpg",
+      "description": "Este celular iphoneXS es muy bueno"
+    }
+  ]
+}

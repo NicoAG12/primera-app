@@ -1,32 +1,45 @@
 import { Form } from "./Form"
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
-export const Modal = () => {
 
+export const ModalNav = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <div>
 
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <Button variant="secondary" onClick={handleShow}>
                 Login
-            </button>
+            </Button>
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header d-flex justify-content-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apple-logo.png/640px-Apple-logo.png" alt="logoApple" width="65px" height="65px" href="#index.j" />
-
-                        </div>
-                        <div class="modal-body">
-                            <Form />
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary">Ingresar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Modal
+                show={show}
+                onHide={handleClose}
+                backdrop="static"
+                keyboard={false}
+            >
+                <Modal.Header className="d-flex justify-content-center">
+                    <Modal.Title>
+                        <img src="https://assets.stickpng.com/images/58e383a9204d556bbd97b149.png" alt="Apple Logo retro"
+                            height="40px"
+                            width="40px" />
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form />
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Cerrar
+                    </Button>
+                    <Button variant="secondary">Iniciar Sesion</Button>
+                </Modal.Footer>
+            </Modal>
 
 
 

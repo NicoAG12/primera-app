@@ -1,1 +1,1 @@
-import { Navbar } from "./navbar";
+import { NavPrincipal } from "./Navbar";
