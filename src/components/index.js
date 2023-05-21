@@ -1,1 +1,0 @@
-import { NavPrincipal } from "./Navbar";
