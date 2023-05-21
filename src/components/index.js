@@ -1,5 +1,1 @@
-export { Calculadora2 } from "./Calculadora2";
-
-export { Calculadora } from "./Calculadora";
-
-
+import { CarouselPrincipal } from "./Carousel";

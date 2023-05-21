@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import {Calculadora,Calculadora2} from "./components"
+import logo from "./logo.svg";
+import "./App.css";
+import { CarouselPrincipal } from "./components/Carousel";
 function App() {
   return (
-  <div>
-    <Calculadora/>
-    <Calculadora2/>
-  </div>
-
+    <div>
+      <CarouselPrincipal />
+    </div>
   );
 }
 
