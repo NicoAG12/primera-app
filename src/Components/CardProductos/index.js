@@ -5,7 +5,7 @@ import data from "../Mocks/phones.json";
 export const CardProductos = () => {
   const phones = data.phones;
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
+    <>
       {phones?.map((celular, index) => {
         return (
           <div key={index}>
@@ -13,12 +13,11 @@ export const CardProductos = () => {
               <Card.Img
                 variant="top"
                 src={celular.image}
-                width="100px"
-                height="100px"
+                width="200px"
+                height="200px"
               />
               <Card.Body>
                 <Card.Title>{celular.name}</Card.Title>
-                <Card.Text>{celular.Description}</Card.Text>
                 <Card.Text>{celular.price}</Card.Text>
                 <Button variant="primary">Go somewhere</Button>
               </Card.Body>
@@ -26,6 +25,6 @@ export const CardProductos = () => {
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
