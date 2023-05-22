@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <NavPrincipal />
-       <CarouselPrincipal />
+      <CarouselPrincipal />
       <CardProductos />
     </>
   );
