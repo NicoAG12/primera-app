@@ -7,8 +7,10 @@ import { CardProductos } from "./Components/CardProductos";
 function App() {
   return (
     <>
-      <Container className="d-flex flex-row">
+      <Container>
+
         <CardProductos />
+
       </Container>
     </>
   );
