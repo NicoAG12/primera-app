@@ -1,37 +1,56 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import data from "../Mocks/phones.json"
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import data from "../Mocks/phones.json";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 export const CardProductos = () => {
-    const phones = data.phones;
-    return (
-        <div style={{ display: "flex", flexDirection: "row" }}>
-            {phones?.map((celular, index) => {
-                return (
-                    <div key={index}>
-                        <Card style={{ width: '18rem' }} >
-                            <Card.Img variant="top" src={celular.image} width="100px" height="100px" />
-                            <Card.Body>
-                                <Card.Title>
-                                    {celular.name}
-                                </Card.Title>
-                                <Card.Text>
-                                    {celular.Description}
-                                </Card.Text>
-                                <Card.Text>
-                                    {celular.price}
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                )
-            })}
+  const phones = data.phones;
+  return (
+    <>
+      {phones?.map((celular, index) => {
+        return (
+          <div key={index} className="p-2">
 
-        </div>
+            <Row xs={1} md={4} className="g-4">
+              {Array.from({ length: 4 }).map((_, idx) => (
+                <Col>
+
+                  <Card style={
+                    {
+                      width: "300px",
+                      height: "300px",
+
+                    }
+                  }>
+                    <Card.Img
+                      style={{
+                        width: "140px",
+                        height: "140px",
 
 
-    );
-}
+                      }} variant="top" src={celular.image} />
+                    <Card.Body >
+                      <Card.Title>{celular.name}</Card.Title>
+                      <Card.Text>
+                        {celular.Description}
+                      </Card.Text>
+                      <Button
+                        style={{
+                        }} >Comprar</Button>
+                    </Card.Body>
 
+                  </Card>
+
+                </Col>
+              ))}
+            </Row >
+          </div >
+
+
+        );
+      })}
+    </>
+  );
+};
 
