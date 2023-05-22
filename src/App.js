@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
- (RS-01.1)ShowCatalogueOfProducts
-import { CardProductos } from './Components/CardProductos';
+import logo from "./logo.svg";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { CardProductos } from "./components/CardProductos";
 function App() {
   return (
     <div className="m-3">
-
       <CardProductos />
     </div>
-
   );
 }
 
