@@ -2,7 +2,8 @@ import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Container from "react-bootstrap/Container";
-import { CardProductos } from "./components/CardProductos";
+import { CardProductos } from "./Components/CardProductos";
+
 function App() {
   return (
     <>
