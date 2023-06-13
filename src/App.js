@@ -1,14 +1,20 @@
 import logo from "./logo.svg";
-import { NavPrincipal } from "./Components/Navbar";
+
 import "./App.css";
-import { CardProductos } from "./Components/CardProductos";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { NavPrincipal } from "./components/Navbar";
+import Container from "react-bootstrap/Container";
+import { CardProductos } from "./components/CardProductos";
+
 function App() {
   return (
     <>
       <NavPrincipal />
-      <CardProductos />
+      <Container>
+        <CardProductos />
+      </Container>
+      master
     </>
   );
 }
-
 export default App;
